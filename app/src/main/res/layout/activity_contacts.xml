@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/relContacts"
+    android:background="#f6f6f6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:baselineAligned="false"
+            android:text="Police Contacts" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_one"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:baselineAligned="false"
+            android:text="Doctor's Contacts" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_two"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:baselineAligned="false"
+            android:text="Ambulance Contacts" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_three"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="User Paired Contacts" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+     <com.google.android.material.floatingactionbutton.FloatingActionButton
+         android:id="@+id/fab"
+         android:layout_marginRight="8dp"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         app:tint="@color/white"
+         app:backgroundTint="@color/colorPrimary"
+         app:srcCompat="@drawable/plus"
+         android:layout_margin="16dp"
+         app:fabSize="normal"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         app:layout_anchorGravity="center_horizontal"
+         />
+
+
+
+
+</RelativeLayout>

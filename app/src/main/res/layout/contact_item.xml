@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/padd_10">
+
+        <RelativeLayout
+            android:id="@+id/icon_front"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon_profile"
+                android:layout_width="@dimen/icon_width_height"
+                android:layout_height="@dimen/icon_width_height" />
+
+            <TextView
+
+                android:id="@+id/icon_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/icon_text"
+
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/ovf"
+            android:id="@+id/lContact"
+            android:layout_toRightOf="@id/icon_front"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duncan Mudulo"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotoregular"
+                android:maxLines="1"
+                android:textColor="@color/contact_name"
+                android:textSize="16sp" />
+
+
+
+            <TextView
+                android:id="@+id/phone"
+                android:text="0702681160"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotolight"
+                android:textColor="@color/bg_circle_default"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/dots"
+            android:id="@+id/ovf"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</FrameLayout>

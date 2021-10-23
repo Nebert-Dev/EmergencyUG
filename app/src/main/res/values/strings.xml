@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Emergency East Africa</string>
+    <string name="paired_contacts">PAIRED CONTACTS</string>
+    <string name="police_directory">EAST AFRICA POLICE DIRECTORY</string>
+    <string name="emergency_type">SET EMERGENCY TYPE</string>
+    <string name="app_guide">APP GUIDE</string>
+    <string name="ambulance_services">Ambulance Services</string>
+    <string name="uganda">Uganda</string>
+    <string name="kenya">Kenya</string>
+    <string name="tanzania">Tanzania</string>
+    <string name="sudan">South Sudan</string>
+    <string name="rwanda">Rwanda</string>
+    <string name="burundi">Burundi</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/appbar"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ugandaBtn"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                app:iconGravity="textStart"
+                android:layout_height="wrap_content"
+                android:height="60dp"
+                android:minWidth="240dp"
+                android:text="@string/uganda"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/kenyaBtn"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                app:iconGravity="textStart"
+                android:layout_height="wrap_content"
+                android:height="60dp"
+                android:minWidth="240dp"
+                android:text="@string/kenya"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tanzaniaBtn"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                app:iconGravity="textStart"
+                android:layout_height="wrap_content"
+                android:height="60dp"
+                android:minWidth="240dp"
+                android:text="@string/tanzania"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/burundiBtn"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                app:iconGravity="textStart"
+                android:layout_height="wrap_content"
+                android:height="60dp"
+                android:minWidth="240dp"
+                android:text="@string/burundi"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/rwandaBtn"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                app:iconGravity="textStart"
+                android:layout_height="wrap_content"
+                android:height="60dp"
+                android:minWidth="240dp"
+                android:text="@string/rwanda"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ssdanBtn"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                app:iconGravity="textStart"
+                android:layout_height="wrap_content"
+                android:height="60dp"
+                android:minWidth="240dp"
+                android:text="@string/sudan"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
